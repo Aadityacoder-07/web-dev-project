@@ -11,13 +11,15 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-
+    flex-wrap: wrap;
 }
 
 .menu-bar {
     padding: 3rem;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
 }
 
 .menu-bar h1 {
@@ -26,6 +28,7 @@ body {
 
 .menu-bar .buttons{
     display: flex;
+    flex-wrap: wrap;
     gap: 2rem;
 }
 
@@ -53,6 +56,7 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap: 2.5rem;
 
 }
@@ -75,5 +79,32 @@ main{
 .play:hover {
     transform: scale(1.1);
     background-color: #EA580C;
+}
+
+@media screen and (max-width: 438px) {
+
+    *{
+        font-size: medium;
+    }
+
+    .menu-bar{
+        padding: 1rem;
+    }
+    .menu-bar h1{
+        max-width: 150px;
+        
+    }
+    .menu-bar .buttons{
+        gap : 1rem;
+    }
+    .menu-bar .button {
+        padding: 6px 13px;
+        border-radius: 15px;
+    }
+
+    img{
+        height: 150px;
+    }
+    
 }
 
