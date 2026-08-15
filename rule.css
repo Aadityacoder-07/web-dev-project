@@ -50,3 +50,27 @@ main ol{
     font-weight: 600;
     font-size: 1.5rem;
 }
+
+@media screen and (max-width: 438px) {
+
+    *{
+        font-size: medium;
+    }
+
+    .menu-bar{
+        padding: 1rem;
+    }
+    .menu-bar h1{
+        max-width: 150px;
+        
+    }
+    .menu-bar .button {
+        padding: 6px 13px;
+        border-radius: 15px;
+    }
+
+    main{
+        padding: 1rem;
+    }
+    
+}
