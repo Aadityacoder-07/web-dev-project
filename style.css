@@ -20,6 +20,7 @@ body{
 header {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .heading {
@@ -39,6 +40,7 @@ header {
     padding: 3rem;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .menu-bar h1 {
@@ -47,6 +49,7 @@ header {
 
 .menu-bar .buttons{
     display: flex;
+    flex-wrap: wrap;
     gap: 2rem;
 }
 
@@ -123,3 +126,31 @@ main {
     font-size: 4rem;
     place-content: center;
 } 
+
+@media screen and (max-width: 438px) {
+
+    *{
+        font-size: medium;
+    }
+
+    .menu-bar{
+        padding: 1rem;
+    }
+    .menu-bar h1{
+        max-width: 150px;
+        
+    }
+    .menu-bar .buttons{
+        gap : 1rem;
+    }
+    .menu-bar .button {
+        padding: 6px 13px;
+        border-radius: 15px;
+    }
+
+    .result{
+        margin-top: 1rem;
+        padding: 1rem;
+    }
+    
+}
