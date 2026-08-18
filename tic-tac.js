@@ -104,6 +104,7 @@ function checkInput(input) {
 
           if (found) {
             displayWinGame();
+            return;
           }
 
           if(input_o.length === 5 && input_x.length === 4 ) {
